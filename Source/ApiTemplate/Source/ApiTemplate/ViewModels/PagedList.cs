@@ -8,9 +8,9 @@ namespace ApiTemplate.ViewModels
     /// </summary>
     /// <typeparam name="T">The type of the items.</typeparam>
 #endif
-    public class Connection<T>
+    public class PagedList<T>
     {
-        public Connection() => this.Items = new List<T>();
+        public PagedList() => this.Items = new List<T>();
 
 #if Swagger
         /// <summary>
